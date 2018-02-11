@@ -5,8 +5,8 @@
 		private $datos = array(
 			"host" => "localhost",
 			"user" => "root",
-			"pass" => "lenov35",
-			"db" => "proyecto"
+			"pass" => "",
+			"db" => "estudiantes"
 		);
 		private $con;
 

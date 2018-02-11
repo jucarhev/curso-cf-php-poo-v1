@@ -12,7 +12,7 @@
 				$ruta = explode("/", $ruta);
 				$ruta = array_filter($ruta);
 				if($ruta[0] == "index.php"){
-					$this->controlador = "session";
+					$this->controlador = "estudiantes";
 				}else{
 					$this->controlador = strtolower(array_shift($ruta));
 				}
@@ -24,7 +24,7 @@
 				}
 				$this->argumento = $ruta;
 			}else{
-				$this->controlador = "session";
+				$this->controlador = "estudiantes";
 				$this->metodo = "index";
 			}
 		}

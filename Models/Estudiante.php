@@ -30,7 +30,7 @@
 
 		public function listar(){
 			$this->pagination->set('table','estudiantes');
-			$this->pagination->set('per_page',2);
+			$this->pagination->set('per_page',10);
 			$this->pagination->set('class_pagination','pagination');
 			$this->pagination->set('feature_query','SELECT t1.*, t2.nombre as nombre_seccion FROM estudiantes t1 INNER JOIN secciones t2 ON t1.id_seccion = t2.id ORDER BY id DESC');
 			$pagination = $this->pagination->pagination_records();

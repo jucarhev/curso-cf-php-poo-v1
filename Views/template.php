@@ -27,11 +27,11 @@
 		      <a class="navbar-brand" href="#">Administración de Estudiantes</a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-			<?php session_start();
-			if(isset($_SESSION['usuario'])){
-	    	?>
 		      <ul class="nav navbar-nav">
 		        <li><a href="<?php echo URL; ?>">Inicio</a></li>
+		        <?php session_start();
+					if(isset($_SESSION['usuario'])){
+				?>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Estudiantes <span class="caret"></span></a>
 		          <ul class="dropdown-menu" role="menu">
@@ -55,8 +55,10 @@
 		            <li><a href="<?php echo URL; ?>session/logout">Logout</a></li>
 		          </ul>
 		        </li>
+		        <?php }else{?>
+		        <li><a href="<?php echo URL; ?>session/">Login</a></li>
+		        <?php } ?>
 		      </ul>
-		      <?php } ?>
 		      
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="http://codigofacilito.com">Codigo Facilito</a></li>
@@ -64,6 +66,7 @@
 		    </div>
 		  </div>
 		</nav>
+		
 <?php
 		}
 

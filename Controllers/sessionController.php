@@ -8,7 +8,6 @@ class sessionController{
 	private $session;
 
 	public function __construct(){
-		session_start();
 		$this->session = new Session();
 	}
 
@@ -25,6 +24,7 @@ class sessionController{
 			if ($result == False) {
 				header('Location: '. URL . "session/sign_in");
 			}else{
+				session_start();
 				$_SESSION['usuario'] = $username;
 				header('Location: '. URL . "estudiantes/index");
 			}

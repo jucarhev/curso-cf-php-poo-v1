@@ -10,4 +10,8 @@ Con mejoras en:
 2.- Token de seguridad(Solo se integro esa libreria)
 3.- Login
 
-
+Faltan:  
+1.- Pagina de perfil
+2.- Ajax
+3.- Mejorar la seguridad
+4.- Dashboard

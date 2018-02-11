@@ -44,7 +44,7 @@
 
       <h3>Please Log In, or <a href="register">Sign Up</a></h3>
 
-      <form role="form" action="sign_in" method="POST">
+      <form role="form" action="<?php echo URL; ?>session/sign_in" method="POST">
         <div class="form-group">
           <label for="inputUsernameEmail">Username or email</label>
           <input type="text" class="form-control" id="inputUsernameEmail" name="username">
@@ -65,5 +65,4 @@
       </form>
     
     </div>
-    
   </div>
