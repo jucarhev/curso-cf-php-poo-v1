@@ -8,7 +8,7 @@ http://twitter.com/_bycar | www.codigofacilito.com
 Con mejoras en:
 1.- Paginacion
 2.- Token de seguridad(Solo se integro esa libreria)
-3.- Login
+3.- Login(con md5)
 
 Faltan:  
 1.- Pagina de perfil
